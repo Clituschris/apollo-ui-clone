@@ -1,0 +1,47 @@
+@import "../../colors";
+
+.app__layout {
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+
+  .main__layout {
+    height: 100vh;
+    background-color: $light_blue;
+    overflow-y: auto;
+    flex: 1;
+    padding-bottom: 2rem;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .layout__container {
+    padding: 0 2rem;
+  }
+
+  .sidebar {
+    transition: width 0.3s ease;
+
+    @media (min-width: 769px) {
+      width: 15rem;
+    }
+
+    @media (min-width: 426px) and (max-width: 768px) {
+      width: 12rem;
+    }
+
+    @media (max-width: 426px) {
+      width: 15rem;
+      position: fixed;
+      z-index: 2;
+      background-color: #ffffff;
+      box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    }
+  }
+
+  .closed {
+    width: 0 !important;
+  }
+}

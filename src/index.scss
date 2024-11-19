@@ -1,0 +1,49 @@
+@import "primeflex/primeflex.scss";
+@import "primereact/resources/themes/lara-light-cyan/theme.css";
+@import "./colors";
+
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: Poppins;
+  overflow: hidden;
+
+  #root {
+    height: 100vh;
+  }
+
+  .p-button-info {
+    background-color: $primary_blue;
+    border-color: $primary_blue;
+
+    &.p-button-outlined {
+      background: none;
+      color: $primary_blue;
+    }
+
+    &.p-button-text {
+      background: none;
+      color: $primary_blue;
+      border: none;
+    }
+  }
+
+  .text-black {
+    color: black;
+  }
+
+  .border__light {
+    border: 1px solid #aaaaaa;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border-radius: 0.25rem;
+  }
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}

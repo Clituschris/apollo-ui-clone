@@ -1,0 +1,29 @@
+@import "../../colors";
+
+.header {
+  backdrop-filter: blur(10px);
+  padding: 0 1.5rem;
+  z-index: 1;
+
+  .sidebar__toggler {
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+
+    &:hover {
+      background-color: $primary_blue;
+      color: #fff;
+      transition-duration: 0.2s;
+    }
+  }
+
+  .p-input-icon-left {
+    input {
+      border-radius: 2rem;
+    }
+  }
+}
